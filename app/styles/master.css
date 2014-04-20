@@ -1,0 +1,80 @@
+/* Layout */
+html, body, #main, .sidebar, .listBox, .mapBox, #map {
+   height: 100%;
+}
+
+#main {
+  height: 100%;
+}
+
+.column {
+  float: left;
+}
+
+.sideBar {
+  width: 20%;
+  background: #172026;
+  color: #fff;
+  height: 100%;
+  max-height: 100%;
+  overflow: scroll;
+}
+
+.listBox {
+  width: 30%;
+  max-height: 100%;
+  overflow: scroll;
+}
+
+.mapBox {
+  width: 50%;
+}
+
+/* Sidebar */
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 100px;
+  margin: 20px 0 10px;
+}
+
+.content {
+  margin-top: 50px;
+}
+
+.filter {
+  margin: 3px 0 15px;
+  font-size: 0.9em;
+}
+
+.topBar {
+  width: 30%;
+  position: fixed;
+  top:0;
+}
+
+/* Topbar */
+.form-light .button-small {
+  margin: 10px 0 10px 0.5rem;
+}
+
+.form-light {
+  background: #f1f1f1;
+  padding: 0 7px;
+}
+
+.form-light .input {
+  height: 2rem;
+}
+
+.listView .item {
+  padding: 5px 10px;
+  border-bottom: 2px #f1f1f1 solid;
+}
+
+/* ListView */
+.listView {
+  margin-top: 50px;
+}
