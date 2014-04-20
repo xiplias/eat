@@ -1,0 +1,25 @@
+{
+  "name": "eat",
+  "version": "0.0.0",
+  "authors": [
+    "Anders Hansen <xiplias@gmail.com>"
+  ],
+  "directory": "app/components",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "pourover": "https://github.com/NYTimes/pourover.git",
+    "tamper": "https://github.com/NYTimes/tamper.git",
+    "basscss": "https://github.com/jxnblk/basscss.git",
+    "leaflet": "http://leaflet-cdn.s3.amazonaws.com/build/leaflet-0.7.2.zip",
+    "underscore": "~1.6.0",
+    "modernizr": "~2.7.2"
+  }
+}
