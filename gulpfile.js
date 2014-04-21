@@ -35,6 +35,11 @@ gulp.task('usemin', function () {
     .pipe(gulp.dest('build/'));
 });
 
+gulp.task('copy', function () {
+  gulp.src('./app/images/*')
+    .pipe(gulp.dest('build/images/'))
+});
+
 gulp.task('reload', function () {
   gulp.src('./app/**/*')
     .pipe(connect.reload());
@@ -49,4 +54,4 @@ gulp.task('clean', function() {
     .pipe(rimraf());
 });
 
-gulp.task('build', ['clean', 'usemin']);
+gulp.task('build', ['clean', 'usemin', 'copy']);
