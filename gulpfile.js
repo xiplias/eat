@@ -16,8 +16,15 @@ gulp.task('connect', function() {
   });
 });
 
-gulp.task('usemin', function() {
-  return gulp.src('./app/*.html')
+gulp.task('prod', function() {
+  connect.server({
+    root: 'build',
+    livereload: true
+  });
+});
+
+gulp.task('usemin', function () {
+  gulp.src('./app/*.html')
     .pipe(usemin({
       css: [minifyCss(), 'concat', rev()],
       html: [minifyHtml({empty: true})],
