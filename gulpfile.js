@@ -17,7 +17,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('usemin', function() {
-  gulp.src('./app/*.html')
+  return gulp.src('./app/*.html')
     .pipe(usemin({
       css: [minifyCss(), 'concat', rev()],
       html: [minifyHtml({empty: true})],
